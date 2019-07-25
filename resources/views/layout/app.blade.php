@@ -7,12 +7,12 @@
     <title>{{$title ?? 'App'}} - {{env('APP_NAME')}}</title>
     <meta name="description" content="">
     <!-- Optional theme -->
-    <link rel="stylesheet" href="{{asset('public/bootstrap.min.css')}}" >
+    <link rel="stylesheet" href="{{asset('bootstrap.min.css')}}" >
 
     <!-- Latest compiled and minified JavaScript -->
-    <script src="{{asset('public/jquery-1.9.1.min.js')}}"></script>
-    <script src="{{asset('public/custom.js')}}"></script>
-    <script src="{{asset('public/bootstrap.min.js')}}"></script>
+    <script src="{{asset('jquery-1.9.1.min.js')}}"></script>
+    <script src="{{asset('custom.js')}}"></script>
+    <script src="{{asset('bootstrap.min.js')}}"></script>
 
 </head>
 <body>
