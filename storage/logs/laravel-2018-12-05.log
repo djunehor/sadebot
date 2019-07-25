@@ -1,0 +1,171 @@
+[2018-12-05 10:13:41] local.ERROR: Error! The command "tesseract" was not found.
+
+Make sure you have Tesseract OCR installed on your system:
+https://github.com/tesseract-ocr/tesseract
+
+The current $PATH is C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Djunehor\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Djunehor\AppData\Local\Programs\Python\Python37\;C:\Users\Djunehor\AppData\Local\Microsoft\WindowsApps;C:\Users\Djunehor\AppData\Roaming\npm;C:\Users\Djunehor\AppData\Local\Yarn\bin;C:\laragon\bin\php\php-7.1.14-Win32-VC14-x64; {"exception":"[object] (thiagoalessio\\TesseractOCR\\TesseractNotFoundException(code: 0): Error! The command \"tesseract\" was not found.
+
+Make sure you have Tesseract OCR installed on your system:
+https://github.com/tesseract-ocr/tesseract
+
+The current $PATH is C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\
+odejs\\;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Djunehor\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\Djunehor\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\Djunehor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Djunehor\\AppData\\Roaming\
+pm;C:\\Users\\Djunehor\\AppData\\Local\\Yarn\\bin;C:\\laragon\\bin\\php\\php-7.1.14-Win32-VC14-x64; at C:\\laragon\\www\\sadebot\\vendor\\thiagoalessio\\tesseract_ocr\\src\\FriendlyErrors.php:44)
+[stacktrace]
+#0 C:\\laragon\\www\\sadebot\\vendor\\thiagoalessio\\tesseract_ocr\\src\\TesseractOCR.php(19): thiagoalessio\\TesseractOCR\\FriendlyErrors::checkTesseractPresence('tesseract')
+#1 C:\\laragon\\www\\sadebot\\app\\Http\\Controllers\\NLPController.php(172): thiagoalessio\\TesseractOCR\\TesseractOCR->run()
+#2 [internal function]: App\\Http\\Controllers\\NLPController->imageProcess()
+#3 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#4 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('imageProcess', Array)
+#5 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\NLPController), 'imageProcess')
+#6 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#7 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Routing\\Route->run()
+#8 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#14 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\laragon\\www\\sadebot\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\laragon\\www\\sadebot\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 {main}
+"} 
+[2018-12-05 10:24:01] local.ERROR: Error! The command "tesseract" was not found.
+
+Make sure you have Tesseract OCR installed on your system:
+https://github.com/tesseract-ocr/tesseract
+
+The current $PATH is C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Djunehor\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Djunehor\AppData\Local\Programs\Python\Python37\;C:\Users\Djunehor\AppData\Local\Microsoft\WindowsApps;C:\Users\Djunehor\AppData\Roaming\npm;C:\Users\Djunehor\AppData\Local\Yarn\bin;C:\laragon\bin\php\php-7.1.14-Win32-VC14-x64; {"exception":"[object] (thiagoalessio\\TesseractOCR\\TesseractNotFoundException(code: 0): Error! The command \"tesseract\" was not found.
+
+Make sure you have Tesseract OCR installed on your system:
+https://github.com/tesseract-ocr/tesseract
+
+The current $PATH is C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\
+odejs\\;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Djunehor\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\Djunehor\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\Djunehor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Djunehor\\AppData\\Roaming\
+pm;C:\\Users\\Djunehor\\AppData\\Local\\Yarn\\bin;C:\\laragon\\bin\\php\\php-7.1.14-Win32-VC14-x64; at C:\\laragon\\www\\sadebot\\vendor\\thiagoalessio\\tesseract_ocr\\src\\FriendlyErrors.php:44)
+[stacktrace]
+#0 C:\\laragon\\www\\sadebot\\vendor\\thiagoalessio\\tesseract_ocr\\src\\TesseractOCR.php(19): thiagoalessio\\TesseractOCR\\FriendlyErrors::checkTesseractPresence('tesseract')
+#1 C:\\laragon\\www\\sadebot\\app\\Http\\Controllers\\NLPController.php(172): thiagoalessio\\TesseractOCR\\TesseractOCR->run()
+#2 [internal function]: App\\Http\\Controllers\\NLPController->imageProcess()
+#3 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#4 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('imageProcess', Array)
+#5 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\NLPController), 'imageProcess')
+#6 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#7 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Routing\\Route->run()
+#8 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#14 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\laragon\\www\\sadebot\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\laragon\\www\\sadebot\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 {main}
+"} 
+[2018-12-05 10:33:24] local.ERROR: Error! The command "tesseract" was not found.
+
+Make sure you have Tesseract OCR installed on your system:
+https://github.com/tesseract-ocr/tesseract
+
+The current $PATH is C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Djunehor\AppData\Local\Programs\Python\Python37\Scripts\;C:\Users\Djunehor\AppData\Local\Programs\Python\Python37\;C:\Users\Djunehor\AppData\Local\Microsoft\WindowsApps;C:\Users\Djunehor\AppData\Roaming\npm;C:\Users\Djunehor\AppData\Local\Yarn\bin;C:\laragon\bin\php\php-7.1.14-Win32-VC14-x64; {"exception":"[object] (thiagoalessio\\TesseractOCR\\TesseractNotFoundException(code: 0): Error! The command \"tesseract\" was not found.
+
+Make sure you have Tesseract OCR installed on your system:
+https://github.com/tesseract-ocr/tesseract
+
+The current $PATH is C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\
+odejs\\;C:\\Program Files (x86)\\Yarn\\bin\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Users\\Djunehor\\AppData\\Local\\Programs\\Python\\Python37\\Scripts\\;C:\\Users\\Djunehor\\AppData\\Local\\Programs\\Python\\Python37\\;C:\\Users\\Djunehor\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Djunehor\\AppData\\Roaming\
+pm;C:\\Users\\Djunehor\\AppData\\Local\\Yarn\\bin;C:\\laragon\\bin\\php\\php-7.1.14-Win32-VC14-x64; at C:\\laragon\\www\\sadebot\\vendor\\thiagoalessio\\tesseract_ocr\\src\\FriendlyErrors.php:44)
+[stacktrace]
+#0 C:\\laragon\\www\\sadebot\\vendor\\thiagoalessio\\tesseract_ocr\\src\\TesseractOCR.php(19): thiagoalessio\\TesseractOCR\\FriendlyErrors::checkTesseractPresence('tesseract')
+#1 C:\\laragon\\www\\sadebot\\app\\Http\\Controllers\\NLPController.php(172): thiagoalessio\\TesseractOCR\\TesseractOCR->run()
+#2 [internal function]: App\\Http\\Controllers\\NLPController->imageProcess()
+#3 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php(54): call_user_func_array(Array, Array)
+#4 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\ControllerDispatcher.php(45): Illuminate\\Routing\\Controller->callAction('imageProcess', Array)
+#5 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(212): Illuminate\\Routing\\ControllerDispatcher->dispatch(Object(Illuminate\\Routing\\Route), Object(App\\Http\\Controllers\\NLPController), 'imageProcess')
+#6 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Route.php(169): Illuminate\\Routing\\Route->runController()
+#7 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(682): Illuminate\\Routing\\Route->run()
+#8 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Routing\\Router->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#9 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\SubstituteBindings.php(41): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#10 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\SubstituteBindings->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#11 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#12 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Middleware\\ThrottleRequests.php(58): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#13 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Routing\\Middleware\\ThrottleRequests->handle(Object(Illuminate\\Http\\Request), Object(Closure), 60, '1')
+#14 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#15 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#16 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(684): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#17 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(659): Illuminate\\Routing\\Router->runRouteWithinStack(Object(Illuminate\\Routing\\Route), Object(Illuminate\\Http\\Request))
+#18 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(625): Illuminate\\Routing\\Router->runRoute(Object(Illuminate\\Http\\Request), Object(Illuminate\\Routing\\Route))
+#19 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Router.php(614): Illuminate\\Routing\\Router->dispatchToRoute(Object(Illuminate\\Http\\Request))
+#20 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(176): Illuminate\\Routing\\Router->dispatch(Object(Illuminate\\Http\\Request))
+#21 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(30): Illuminate\\Foundation\\Http\\Kernel->Illuminate\\Foundation\\Http\\{closure}(Object(Illuminate\\Http\\Request))
+#22 C:\\laragon\\www\\sadebot\\vendor\\fideloper\\proxy\\src\\TrustProxies.php(57): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#23 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Fideloper\\Proxy\\TrustProxies->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#24 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#25 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#26 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#27 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#28 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest.php(31): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#29 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\TransformsRequest->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#30 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#31 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize.php(27): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#32 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\ValidatePostSize->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#33 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#34 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode.php(62): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#35 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(151): Illuminate\\Foundation\\Http\\Middleware\\CheckForMaintenanceMode->handle(Object(Illuminate\\Http\\Request), Object(Closure))
+#36 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Pipeline.php(53): Illuminate\\Pipeline\\Pipeline->Illuminate\\Pipeline\\{closure}(Object(Illuminate\\Http\\Request))
+#37 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Pipeline\\Pipeline.php(104): Illuminate\\Routing\\Pipeline->Illuminate\\Routing\\{closure}(Object(Illuminate\\Http\\Request))
+#38 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(151): Illuminate\\Pipeline\\Pipeline->then(Object(Closure))
+#39 C:\\laragon\\www\\sadebot\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(116): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
+#40 C:\\laragon\\www\\sadebot\\public\\index.php(55): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
+#41 {main}
+"} 
