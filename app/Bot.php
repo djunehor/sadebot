@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Log;
 class Bot extends Model
 {
     private static $apiUrl = 'https://maps.googleapis.com/maps/api/directions/json';
-    private static $googleKey = 'AIzaSyAgMUkvlrlZ3t03Lo3kd_sihUfvbasbTK0';
 
     public static function getDirections($input) {
 
@@ -234,13 +233,14 @@ class Bot extends Model
 
     public static function googleDirections($from, $to, $mode)
     {
+        $googleKey = env('GOOGLE_KEY');
         $message = "Found no pathway to connect <b>$from</b> to <b>$to</b>.<br>Ensure the names are correctly spelt.<br>Compound names should be seperated with an hypen e.g. iyana ipaja should be written as iyana-ipaja.<br>Also try to be specific incase there are multiple places with same name e.g type ikeja-along instead of ikeja.";
 
         //The Google Directions API URL. Do not change this.
         $apiUrl = self::$apiUrl;
 
         //Construct the URL that we will visit with cURL.
-        $url = $apiUrl . '?' . 'origin=' . urlencode($from) . '&destination=' . urlencode($to) . '&mode=' . $mode . '&key='.self::$googleKey;
+        $url = $apiUrl . '?' . 'origin=' . urlencode($from) . '&destination=' . urlencode($to) . '&mode=' . $mode . '&key='.$googleKey;
 
         //Initiate cURL.
         $res = httpRequest($url);
